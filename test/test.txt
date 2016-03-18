@@ -1,0 +1,10 @@
+This is {{ grains['fqdn'] }}
+
+Host:   {{ grains['host'].upper() }}
+OS:     {{ grains['osfullname'] }}
+Memory: {{ grains['mem_total'] }}
+CPUs:   {{ grains['num_cpus'] }}
+
+Env:    {{ grains['environment'] }}
+Loc:    {{ grains['data-center'] }}
+Role:   {{ grains['role'] }}
